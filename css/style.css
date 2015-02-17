@@ -1,0 +1,466 @@
+/* CSS */ 
+
+body{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-family: Helvetica,Arial,sans-serif;
+    min-height: 900px;
+}
+
+a:hover{
+    text-decoration: none;
+    color:#000;
+}
+
+a{
+    color:#000;
+}
+
+a.anchor{
+    display: block; position: relative; top: -35px; visibility: hidden;
+}
+
+/* --------------- navbar styles --------------- */
+
+.navbar{
+    min-height:35px;
+}
+
+.navbar-inverse{
+    background-color: #000;
+}
+
+.navbar-inverse .navbar-brand{
+    height: 35px;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-brand:hover{
+    //color: #e6e6e6;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    height: 30px;
+    padding: 9px 0px 6px 0px; 
+    margin: 0px 15px 0px 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    //color: #e6e6e6;
+    border-bottom: #e6e6e6 solid 2px;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a{
+    border-bottom: #fff solid 2px;
+    background-color: #000;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover{
+    border-bottom: #e6e6e6 solid 2px;
+    //color: #e6e6e6;
+}
+
+.navbar-toggle{
+    padding: 5px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 0px;
+}
+
+.navbar-inverse .navbar-collapse{
+    border-color: #ddd;
+}
+
+@media (max-width: 767px){
+
+    .navbar-inverse .navbar-nav > .active > a{
+        display: inline-block;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        display: inline-block;
+    }
+
+}
+
+
+/* --------------- main gallery styles --------------- */
+
+.gallery > .col-md-6{
+    height: 585px;
+    padding: 15px;
+}
+
+.special-float{
+    float:right;
+}
+
+.gallery > .col-md-6 > .container{
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+}
+
+.gallery > .col-md-3{
+    height: 293px;
+    padding: 15px;
+}
+
+.gallery > .col-md-3 > .container{
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+}
+
+.placeholder > .container{
+    background-color: #fff;
+}
+
+#mlw{
+    background-image: url(../img/mlw.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+#mlw:hover{
+    background-image: url(../img/mlw-hover.png);
+}
+
+#wildflower{
+    background-image: url(../img/wildflower-2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#wildflower:hover{
+    background-image: url(../img/wildflower-2-hover.png);
+}
+
+#scratch{
+    background-image: url(../img/scratch.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#scratch:hover{
+    background-image: url(../img/scratch-hover.png);
+}
+
+#storyscape{
+    background-image: url(../img/storyscape.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#storyscape:hover{
+    background-image: url(../img/storyscape-hover.png);
+}
+
+#hmitl{
+    background-image: url(../img/hmitl.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#hmitl:hover{
+    background-image: url(../img/hmitl-hover.png);
+}
+
+#festival{
+    background-image: url(../img/festival.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#festival:hover{
+    background-image: url(../img/festival-hover.png);
+}
+
+#lcl{
+    background-image: url(../img/lcl.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#lcl:hover{
+    background-image: url(../img/lcl-hover.png);
+}
+
+#indiavisit{
+    background-image: url(../img/indiavisit.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#indiavisit:hover{
+    background-image: url(../img/indiavisit-hover.png);
+}
+
+#tagme{
+    background-image: url(../img/tagme.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#tagme:hover{
+    background-image: url(../img/tagme-hover.png);
+}
+
+#unhangout{
+    background-image: url(../img/unhangout.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#unhangout:hover{
+    background-image: url(../img/unhangout-hover.png);
+}
+
+.description{
+    visibility: hidden;
+    display: block;
+    height: 100%;
+}
+
+.big-feature > .top-line{
+    border-top: 3px #fff solid;
+    width: 50%;
+    margin-top: 3px;
+}
+
+.small-feature > .top-line{
+    border-top: 3px #fff solid;
+    width: 75%;
+    margin-top: 3px;
+}
+
+.description > h1{
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+    line-height: 95%;
+}
+
+.description > .less-space{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.description > h4 {
+    margin-top: 60px;
+    color: #fff;
+    font-weight: 200;
+    line-height: 130%;
+}
+
+.description > h5 {
+    font-size: 16px;
+    margin-top: 40px;
+    color: #fff;
+    font-weight: 200;
+    line-height: 130%;
+}
+
+/* --------------- about content styles --------------- */
+
+.left-info-special{
+    display: none;
+}
+
+.about-content{
+    margin-top: 100px;
+}
+
+.left-info{
+    height:100%;
+}
+
+.left-info > h4{
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.left-info > p{
+    margin-bottom: 30px;
+}
+
+#ml-logo{
+    margin-top: 50px;
+    padding:0px;
+}
+
+.right-info > h2{
+    color: #000;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 45px;
+    letter-spacing: -0.2px;
+}
+
+.right-info > p{
+    font-size: 15px;
+}
+
+#quote{
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    margin-bottom: 35px;
+}
+
+/* --------------- media queries for responsiveness --------------- */
+
+
+/* md screen size */
+@media (max-width: 1199px){
+    .gallery > .col-md-6{
+        height: 485px;
+    }
+
+    .gallery > .col-md-3{
+        height: 243px;
+    }
+
+    .gallery > .col-md-6 > .container{
+        padding: 25px;
+    }
+
+    .gallery > .col-md-3 > .container{
+        padding: 20px;
+    }
+
+    .small-feature > h1{
+        font-size: 28px;
+    }
+
+    .description > h5{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .right-info > h2{
+        margin-bottom: 23px;
+    }
+}
+
+/* sm screen size */
+@media (max-width: 991px){
+    .gallery > .col-sm-6{
+        height: 375px;
+    }
+
+    .gallery > .col-sm-6 > .container{
+        padding: 25px;
+    }
+
+    .big-feature > .top-line{
+        width: 75%;
+    }
+
+    .description > h1{
+        font-size: 32px;
+    }
+
+    .small-feature > h1{
+        font-size: 32px;
+    }
+
+    .description > .less-space{
+        margin-top: 50px;
+        font-size: 18px;
+    }
+
+    .description > h4 {
+        margin-top: 50px;
+        font-size: 18px;
+    }
+
+    .description > h5 {
+        font-size: 18px;
+        margin-top: 50px;
+    }
+
+    .description > .sm-less-space{
+        margin-top: 25px;
+    }
+
+    .right-info > h2{
+        margin-bottom: 45px;
+    }
+}
+
+/* xs screen size */
+@media (max-width: 767px){
+
+    .gallery > .col-xs-12{
+        width: 375px;
+        float: left;
+    }
+
+    .left-info{
+        display: none;
+    }
+
+    .left-info-special{
+        display: block;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    .left-info-special > h4{
+        font-weight: bold;
+        margin-bottom: 3px;
+]    }
+
+    .left-info-special > p{
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+/* --------------- creative learning page styles --------------- */
+
+
+#creative-learning-content{
+    padding-top: 70px;
+    font-size: 16px;
+}
+
+
+/* --------------- hmitl page styles --------------- */
+
+
+#hmitl-content{
+    font-size: 15px;
+}
+
+#hmitl-content h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+#hmitl-content > .video-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    margin-bottom: 40px;
+}
+
+#hmitl-content > .video-container > iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
