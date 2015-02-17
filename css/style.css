@@ -124,53 +124,53 @@ a.anchor{
 }
 
 #mlw{
-    background-image: url(../img/mlw.JPG);
+    background-image: url(../img/mlw.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #mlw:hover{
-    background-image: url(../img/mlw-hover.png);
+    background-image: url(../img/mlw-hover.jpg);
 }
 
 #wildflower{
-    background-image: url(../img/wildflower-2.png);
+    background-image: url(../img/wildflower.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #wildflower:hover{
-    background-image: url(../img/wildflower-2-hover.png);
+    background-image: url(../img/wildflower-hover.jpg);
 }
 
 #scratch{
-    background-image: url(../img/scratch.png);
+    background-image: url(../img/scratch.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #scratch:hover{
-    background-image: url(../img/scratch-hover.png);
+    background-image: url(../img/scratch-hover.jpg);
 }
 
 #storyscape{
-    background-image: url(../img/storyscape.png);
+    background-image: url(../img/storyscape.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #storyscape:hover{
-    background-image: url(../img/storyscape-hover.png);
+    background-image: url(../img/storyscape-hover.jpg);
 }
 
 #hmitl{
-    background-image: url(../img/hmitl.png);
+    background-image: url(../img/hmitl.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #hmitl:hover{
-    background-image: url(../img/hmitl-hover.png);
+    background-image: url(../img/hmitl-hover.jpg);
 }
 
 #festival{
@@ -180,7 +180,7 @@ a.anchor{
 }
 
 #festival:hover{
-    background-image: url(../img/festival-hover.png);
+    background-image: url(../img/festival-hover.jpg);
 }
 
 #lcl{
@@ -190,7 +190,7 @@ a.anchor{
 }
 
 #lcl:hover{
-    background-image: url(../img/lcl-hover.png);
+    background-image: url(../img/lcl-hover.jpg);
 }
 
 #indiavisit{
@@ -200,27 +200,27 @@ a.anchor{
 }
 
 #indiavisit:hover{
-    background-image: url(../img/indiavisit-hover.png);
+    background-image: url(../img/indiavisit-hover.jpg);
 }
 
 #tagme{
-    background-image: url(../img/tagme.png);
+    background-image: url(../img/tagme.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #tagme:hover{
-    background-image: url(../img/tagme-hover.png);
+    background-image: url(../img/tagme-hover.jpg);
 }
 
 #unhangout{
-    background-image: url(../img/unhangout.png);
+    background-image: url(../img/unhangout.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #unhangout:hover{
-    background-image: url(../img/unhangout-hover.png);
+    background-image: url(../img/unhangout-hover.jpg);
 }
 
 .description{
