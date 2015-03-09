@@ -7,7 +7,7 @@
     <title>Learning Over Education</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,9 +43,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="/">home <span class="sr-only">(current)</span></a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="/creative-learning.html">creative learning</a></li>
+            <li class="active" id="nav-home"><a href="/">home<span class="sr-only">(current)</span></a></li>
+            <li id="nav-about"><a href="#about">about</a></li>
+            <li><a href="/creative-learning">creative learning</a></li>
             <!--<li><a href="/blog">blog</a></li>-->
           </ul>
         </div><!--/.nav-collapse -->
@@ -57,143 +57,150 @@
       <div class="row gallery">
         
         <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="container project" id="wildflower">
-            <a href="http://socialcomputing.media.mit.edu/projects.html" class="description big-feature">
-              <div class="top-line"></div>
-              <h1>wildflower<br>montessori<br>school</h1>
-              <h4 class="sm-less-space">a new learning environment, blurring the boundaries between coffee shops and schools, between home-schooling and institutional schooling, between tactile, multisensory methods and abstract thinking.</h4>
-            </a>            
+          <div class="container project-container">
+            <div class="project-image" id="wildflower"><img src='img/wildflower.jpg' alt='Wildflower Montessori School'></div>
+            <div class="project-content big-feature">
+                <div class="top-line"></div>
+                <p class="project-title">wildflower<br>montessori<br>school</p>
+                <p class="project-description">a new learning environment, blurring the boundaries between coffee shops and schools, between home-schooling and institutional schooling, between tactile, multisensory methods and abstract thinking.</p>
+                <a class="project-link" href="http://socialcomputing.media.mit.edu/projects.html"><p>Learn More<span class="glyphicon glyphicon-chevron-right"></span></p></a>
+            </div>
           </div>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="container project" id="hmitl">
-            <a href="/how-mit-learns.html" class="description small-feature">
+          <div class="container project-container">
+            <div class="project-image" id="scratch"><img src='img/scratch.png' alt='Scratch'></div>
+            <div class="project-content small-feature">
               <div class="top-line"></div>
-              <h1>how mit<br>learns</h1>
-              <h5> a glimpse into the experience of creative learning at MIT.</h5>
-            </a>
+              <p class="project-title">scratch</p>
+              <p class="project-description"> a free programming language that makes it easy to create interactive art, stories, simulations, and games – and share those creations online.</p>
+              <a class="project-link" href="http://scratch.mit.edu/"><p>Learn More<span class="glyphicon glyphicon-chevron-right"></span></p></a>
+            </div>
           </div>
         </div>
 
-        <div class="col-md-3 placeholder hidden-sm hidden-xs"><div class="container"></div></div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="container project-container">
+            <div class="project-image" id="tagme"><img src='img/tagme.jpg' alt='TagMe'></div>
+            <div class="project-content small-feature">
+              <div class="top-line"></div>
+              <p class="project-title">TagMe</p>
+              <p class="project-description">an easy-to-use toolkit for turning the personal environment into an extended communications interface.</p>
+              <a class="project-link" href="http://fluid.media.mit.edu/projects/tagme"><p>Learn More<span class="glyphicon glyphicon-chevron-right"></span></p></a>
+            </div>            
+          </div>
+        </div>
 
         <div class="col-md-6 special-float col-sm-6 col-xs-12">
-
-
-          <div class="container project" id="mlw">
-            <a href="/mlw" class="description big-feature">
+          <div class="container project-container">
+            <div class="project-image" id="mlw"><img src='img/mlw.jpg' alt='Making Learning Work'></div>
+            <div class="project-content big-feature">
               <div class="top-line"></div>
-              <h1>read<br>out<br>loud</h1>
-              <h4>a mobile application that converts any storybook into a digital reading guide, helping parents and children learn English together.</h4>
-            </a>
+              <p class="project-title">making<br>learning<br>work</p>
+              <p class="project-description">an adult learning innovation project aimed at giving more adult learners a pathway to success by leveraging creative learning approaches.</p>
+              <a class="project-link" href="/mlw"><p>Learn More<span class="glyphicon glyphicon-chevron-right"></span></p></a>
+            </div>
           </div>   
         </div>
-        
+
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="container project" id="tagme">
-            <a href="http://fluid.media.mit.edu/projects/tagme" class="description small-feature">
+          <div class="container project-container">
+            <div class="project-image" id="lcl"><img src='img/lcl.png' alt='Learning Creative Learning'></div>
+            <div class="project-content small-feature">
               <div class="top-line"></div>
-              <h1>TagMe</h1>
-              <h5>an easy-to-use toolkit for turning the personal environment into an extended communications interface.</h5>
-            </a>            
+              <p class="project-title">learning<br>creative<br>learning</p>
+              <p class="project-description"> an open community exploring new ways to support creative learning.</p>
+              <a class="project-link" href="/lcl"><p>Learn More<span class="glyphicon glyphicon-chevron-right"></span></p></a>
+            </div>            
           </div>
         </div>
 
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="container project" id="scratch">
-            <a href="http://scratch.media.mit.edu" class="description small-feature">
+          <div class="container project-container">
+            <div class="project-image" id="hmitl"><img src='img/hmitl.jpg' alt='How MIT Learns'></div>
+            <div class="project-content small-feature">
               <div class="top-line"></div>
-              <h1>scratch</h1>
-              <h5> a free programming language that makes it easy to create interactive art, stories, simulations, and games – and share those creations online.</h5>
-            </a>            
-          </div>
-        </div>
-
-        <div class="col-md-3 col-md-offset-3 col-sm-6 col-xs-12">
-          <div class="container project" id="storyscape">
-            <a href="https://storyscape.io/" class="description small-feature">
-              <div class="top-line"></div>
-              <h1>StoryScape</h1>
-              <h5> an inclusive creative learning platform that allows users to create stories in order to facilitate constructionist participatory learning.</h5>
-            </a>             
-          </div>
-        </div>
-        
-        <div class="col-md-3 col-sm-6 col-xs-12">          
-          <div class="container project" id="indiavisit">
-            <a href="/reports/indiavisit" class="description small-feature">
-              <div class="top-line"></div>
-              <h1>lifelong<br>learning<br>workshop</h1>
-              <h5 class="less-space">a 7-day workshop focused on prototyping technology for adult learners in India.</h5>
-            </a>            
-          </div>      
-        </div>  
-        
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="container project" id="lcl">
-            <a href="/lcl" class="description small-feature">
-              <div class="top-line"></div>
-              <h1>learning<br>creative<br>learning</h1>
-              <h5> an open community exploring new ways to support creative learning.</h5>
-            </a> 
+              <p class="project-title">how mit<br>learns</p>
+              <p class="project-description"> a glimpse into the experience of creative learning at MIT.</p>
+              <a class="project-link" href="/how-mit-learns"><p>Learn More<span class="glyphicon glyphicon-chevron-right"></span></p></a>
+            </div> 
           </div>  
-        </div> 
-
-        <div class="col-md-6 col-md-offset-3 col-sm-6 col-xs-12">
-          <div class="container project" id="festival">
-            <a href="http://festival-of-learning.media.mit.edu/" class="description big-feature">
-              <div class="top-line"></div>
-              <h1>festival of<br>learning</h1>
-              <h4>magical experiences, skill-shares, and cooperative creativity are all part of the Festival of Learning, a day-long creative festival throughout the Media Lab. <br><br>learn. teach. do.</h4>
-            </a>
-          </div>
         </div>
         
         <div class="col-md-3 col-sm-6 col-xs-12">
-          
-          <div class="container project" id="unhangout">
-            <a href="http://unhangout.media.mit.edu" class="description small-feature">
+          <div class="container project-container">
+            <div class="project-image" id="festival"><img src='img/festival.jpg' alt='Festival of Learning'></div>
+            <div class="project-content small-feature">
               <div class="top-line"></div>
-              <h1>unhangout</h1>
-              <h5>an open source platform for running large-scale unconferences online.</h5>
-            </a>            
+              <p class="project-title">festival of<br>learning</p>
+              <p class="project-description">a day-long festival at the Media Lab, full of magical experiences, skill-shares, and cooperative creativity.</p>
+              <a class="project-link" href="http://festival-of-learning.media.mit.edu/"><p>Learn More<span class="glyphicon glyphicon-chevron-right"></span></p></a>
+            </div>
           </div>
-          
+        </div>  
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="container project-container">
+            <div class="project-image" id="storyscape"><img src='img/storyscape.jpg' alt='Storyscape'></div>
+            <div class="project-content small-feature">
+              <div class="top-line"></div>
+              <p class="project-title">StoryScape</p>
+              <p class="project-description"> an inclusive creative learning platform that allows users to create stories in order to facilitate constructionist participatory learning.</p>
+              <a class="project-link" href="https://storyscape.io/"><p>Learn More<span class="glyphicon glyphicon-chevron-right"></span></p></a>
+            </div>             
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">  
+          <div class="container project-container">
+            <div class="project-image" id="unhangout"><img src='img/unhangout.jpg' alt='Unhangout'></div>
+            <div class="project-content small-feature">
+              <div class="top-line"></div>
+              <p class="project-title">unhangout</p>
+              <p class="project-description">an open source platform for running large-scale unconferences online.</p>
+              <a class="project-link" href="http://unhangout.media.mit.edu"><p>Learn More<span class="glyphicon glyphicon-chevron-right"></span></p></a>
+            </div>            
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">          
+          <div class="container project-container">
+            <div class="project-image" id="indiavisit"><img src='img/indiavisit.jpg' alt='Lifelong Learning Workshop'></div>
+            <div class="project-content small-feature">
+              <div class="top-line"></div>
+              <p class="project-title">lifelong<br>learning<br>workshop</p>
+              <p class="project-description">a 7-day workshop focused on prototyping technology for adult learners in India.</p>
+              <a class="project-link" href="/reports/indiavisit"><p>Learn More<span class="glyphicon glyphicon-chevron-right"></span></p></a>
+            </div>            
+          </div>      
         </div>
 
       </div> <!-- /row -->
       
       <a class="anchor" id="about"></a>
       <div class="row about-content">
-        <div class="col-md-3 left-info col-sm-4 col-xs-12">
-          <h4> email </h4>
-          <p><a href="mailto:learn@media.mit.edu"> learn@media.mit.edu</a></p>
-          <h4> twitter </h4>
-          <p><a href="https://twitter.com/medialablearn"> @medialablearn</a></p>
-          <div class="container" id="ml-logo">
-            <a href="http://media.mit.edu">
-             <image src="/img/media_lab_logo_300dpi.png" width="162" height="88"></image>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 right-info col-sm-8 col-xs-12 ">
+          
+        <div class="col-md-6 right-info col-md-push-3 col-sm-8 col-sm-push-4 col-xs-12">
           <h2> learning over education </h2>
           <p id="quote"> "Education is something that is done to you. Learning is something you do for yourself." - Joi Ito </p>
-          <p> Learning Over Education is a new MIT Media Lab initiative that promotes creative learning: projects, peers, passion, and play. It ties together learning related research that takes place across different research groups, develops new technologies for creative learning, and uses the Media Lab as platform for new conversations about learning. </p> 
+          <p id="l0e-summary"> Learning Over Education is a new MIT Media Lab initiative that promotes creative learning: projects, peers, passion, and play. It ties together learning related research that takes place across different research groups, develops new technologies for creative learning, and uses the Media Lab as platform for new conversations about learning. </p> 
         </div>
 
-        <div class="col-md-3 left-info-special col-sm-4 col-xs-12">
+
+        <div class="col-md-3 col-md-pull-6 left-info col-sm-4 col-sm-pull-8 col-xs-12">
           <h4> email </h4>
           <p><a href="mailto:learn@media.mit.edu"> learn@media.mit.edu</a></p>
           <h4> twitter </h4>
           <p><a href="https://twitter.com/medialablearn"> @medialablearn</a></p>
           <div class="container" id="ml-logo">
             <a href="http://media.mit.edu">
-             <image src="/img/media_lab_logo_300dpi.png" width="162" height="88"></image>
+             <img src="img/media_lab_logo_300dpi.png" alt="MIT Media Lab" width="162" height="88">
             </a>
           </div>
         </div>
+
+
 
       </div> <!-- /row -->
 
@@ -205,8 +212,8 @@
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 
 
 

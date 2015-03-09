@@ -5,6 +5,8 @@ body{
     padding-bottom: 100px;
     font-family: Helvetica,Arial,sans-serif;
     min-height: 900px;
+    color:#1A1A1A;
+    background-color: #fff
 }
 
 a:hover{
@@ -13,7 +15,7 @@ a:hover{
 }
 
 a{
-    color:#000;
+    color:#383838;
 }
 
 a.anchor{
@@ -27,7 +29,7 @@ a.anchor{
 }
 
 .navbar-inverse{
-    background-color: #000;
+    background-color: #0D0D0D;
 }
 
 .navbar-inverse .navbar-brand{
@@ -39,7 +41,6 @@ a.anchor{
 }
 
 .navbar-inverse .navbar-brand:hover{
-    //color: #e6e6e6;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -51,19 +52,17 @@ a.anchor{
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    //color: #e6e6e6;
-    border-bottom: #e6e6e6 solid 2px;
+    border-bottom: #fff solid 2px;
 
 }
 
 .navbar-inverse .navbar-nav > .active > a{
     border-bottom: #fff solid 2px;
-    background-color: #000;
+    //background-color: #000;
 }
 
 .navbar-inverse .navbar-nav > .active > a:hover{
-    border-bottom: #e6e6e6 solid 2px;
-    //color: #e6e6e6;
+    border-bottom: 2px solid #fff;
 }
 
 .navbar-toggle{
@@ -94,7 +93,12 @@ a.anchor{
 /* --------------- main gallery styles --------------- */
 
 .gallery > .col-md-6{
-    height: 585px;
+    height: 485px;
+    padding: 15px;
+}
+
+.gallery > .col-md-3{
+    height: 243px;
     padding: 15px;
 }
 
@@ -102,131 +106,42 @@ a.anchor{
     float:right;
 }
 
-.gallery > .col-md-6 > .container{
+.project-container{
     height: 100%;
     width: 100%;
-    padding: 30px;
+    position: relative;
+    background-color: #000;
 }
 
-.gallery > .col-md-3{
-    height: 293px;
-    padding: 15px;
+.project-container > .project-image{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity:1;
 }
 
-.gallery > .col-md-3 > .container{
+.project-image > img{
     height: 100%;
-    width: 100%;
+}
+
+.project-container > .project-content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.big-feature{
     padding: 25px;
 }
 
-.placeholder > .container{
-    background-color: #fff;
-}
-
-#mlw{
-    background-image: url(../img/mlw.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#mlw:hover{
-    background-image: url(../img/mlw-hover.jpg);
-}
-
-#wildflower{
-    background-image: url(../img/wildflower.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#wildflower:hover{
-    background-image: url(../img/wildflower-hover.jpg);
-}
-
-#scratch{
-    background-image: url(../img/scratch.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#scratch:hover{
-    background-image: url(../img/scratch-hover.jpg);
-}
-
-#storyscape{
-    background-image: url(../img/storyscape.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#storyscape:hover{
-    background-image: url(../img/storyscape-hover.jpg);
-}
-
-#hmitl{
-    background-image: url(../img/hmitl.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#hmitl:hover{
-    background-image: url(../img/hmitl-hover.jpg);
-}
-
-#festival{
-    background-image: url(../img/festival.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#festival:hover{
-    background-image: url(../img/festival-hover.jpg);
-}
-
-#lcl{
-    background-image: url(../img/lcl.png);
-    background-size: cover;
-    background-position: center;
-}
-
-#lcl:hover{
-    background-image: url(../img/lcl-hover.jpg);
-}
-
-#indiavisit{
-    background-image: url(../img/indiavisit.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#indiavisit:hover{
-    background-image: url(../img/indiavisit-hover.jpg);
-}
-
-#tagme{
-    background-image: url(../img/tagme.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#tagme:hover{
-    background-image: url(../img/tagme-hover.jpg);
-}
-
-#unhangout{
-    background-image: url(../img/unhangout.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#unhangout:hover{
-    background-image: url(../img/unhangout-hover.jpg);
-}
-
-.description{
-    visibility: hidden;
-    display: block;
-    height: 100%;
+.small-feature{
+    padding: 15px;
 }
 
 .big-feature > .top-line{
@@ -236,43 +151,60 @@ a.anchor{
 }
 
 .small-feature > .top-line{
-    border-top: 3px #fff solid;
+    border-top: 2px #fff solid;
     width: 75%;
-    margin-top: 3px;
+    margin-top: 2px;
 }
 
-.description > h1{
+.big-feature > .project-title{
+    font-size: 36px;
     color: #fff;
     margin-top: 10px;
     font-weight: bold;
     line-height: 95%;
 }
 
-.description > .less-space{
-    margin-top: 10px;
-    font-size: 15px;
+.small-feature > .project-title{
+    font-size: 28px;
+    color: #fff;
+    margin-top: 8px;
+    font-weight: bold;
+    line-height: 95%;
+    margin-bottom: 8px;
 }
 
-.description > h4 {
-    margin-top: 60px;
+.big-feature > .project-description{
+    font-size: 18px;
     color: #fff;
     font-weight: 200;
     line-height: 130%;
 }
 
-.description > h5 {
-    font-size: 16px;
-    margin-top: 40px;
+.small-feature > .project-description{
+    font-size: 14px;
     color: #fff;
     font-weight: 200;
     line-height: 130%;
+    margin-bottom: 10px;
+}
+
+.big-feature > .project-link{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.small-feature > .project-link{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.project-link:hover{
+    color:#e5e5e5;
 }
 
 /* --------------- about content styles --------------- */
-
-.left-info-special{
-    display: none;
-}
 
 .about-content{
     margin-top: 100px;
@@ -300,54 +232,21 @@ a.anchor{
     color: #000;
     font-weight: bold;
     margin-top: 0px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     letter-spacing: -0.2px;
 }
 
 .right-info > p{
-    font-size: 15px;
+    font-size: 16px;
 }
 
 #quote{
     font-size: 18px;
     letter-spacing: -0.2px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 /* --------------- media queries for responsiveness --------------- */
-
-
-/* md screen size */
-@media (max-width: 1199px){
-    .gallery > .col-md-6{
-        height: 485px;
-    }
-
-    .gallery > .col-md-3{
-        height: 243px;
-    }
-
-    .gallery > .col-md-6 > .container{
-        padding: 25px;
-    }
-
-    .gallery > .col-md-3 > .container{
-        padding: 20px;
-    }
-
-    .small-feature > h1{
-        font-size: 28px;
-    }
-
-    .description > h5{
-        font-size: 15px;
-        margin-top: 20px;
-    }
-
-    .right-info > h2{
-        margin-bottom: 23px;
-    }
-}
 
 /* sm screen size */
 @media (max-width: 991px){
@@ -355,73 +254,99 @@ a.anchor{
         height: 375px;
     }
 
-    .gallery > .col-sm-6 > .container{
-        padding: 25px;
+    .project-content{
+        padding: 25px !important;
     }
 
-    .big-feature > .top-line{
-        width: 75%;
+    .top-line{
+        width: 50% !important;
+        border-top: solid 3px #fff !important;
     }
 
-    .description > h1{
-        font-size: 32px;
+    .project-title{
+        font-size: 36px !important; 
+        margin-bottom: 15px !important;
     }
 
-    .small-feature > h1{
-        font-size: 32px;
+    .project-description{
+        font-size: 16px !important;
+        margin-bottom: 25px !important; 
     }
 
-    .description > .less-space{
-        margin-top: 50px;
-        font-size: 18px;
+    .project-link{
+        font-size: 16px !important;
     }
-
-    .description > h4 {
-        margin-top: 50px;
-        font-size: 18px;
-    }
-
-    .description > h5 {
-        font-size: 18px;
-        margin-top: 50px;
-    }
-
-    .description > .sm-less-space{
-        margin-top: 25px;
-    }
-
-    .right-info > h2{
-        margin-bottom: 45px;
-    }
+    
 }
 
 /* xs screen size */
 @media (max-width: 767px){
 
+    body{
+        padding-bottom: 50px;
+    }
+
+    .about-content{
+        margin-top: 50px;
+    }  
+
     .gallery > .col-xs-12{
-        width: 375px;
-        float: left;
+        max-height: 375px;
     }
 
-    .left-info{
-        display: none;
+    .project-container{
+        max-width: 345px;
     }
 
-    .left-info-special{
-        display: block;
-        height: 100%;
-        margin-top: 20px;
+    .project-image > img{
+        width:100%;
+        height: auto;
+        max-width: 345px; 
     }
 
-    .left-info-special > h4{
-        font-weight: bold;
-        margin-bottom: 3px;
-]    }
-
-    .left-info-special > p{
-        margin-bottom: 30px;
+    .right-info, .left-info{
+        padding-right:30px;
+        padding-left: 30px; 
     }
 
+    #l0e-summary{
+        margin-bottom: 20px;
+    }
+
+    #ml-logo{
+        margin-top: 30px;
+    }
+}
+
+/* special -  */
+@media (max-width: 375px){
+
+    .gallery > .col-xs-12{
+        height: auto;
+    }
+
+    .project-content{
+        padding: 15px !important;
+        overflow: hidden;
+    }
+
+    .project-container{
+        padding-bottom: 100%;
+    }
+
+    .project-title{
+        font-size: 1.7em !important; 
+        margin-bottom: 10px !important;
+    }
+
+    .project-description{
+        font-size: 1em !important;
+        margin-bottom: 15px !important; 
+    }
+
+    .project-link{
+        font-size: 1em !important;
+    }
 }
 
 
@@ -430,8 +355,27 @@ a.anchor{
 
 
 #creative-learning-content{
-    padding-top: 70px;
     font-size: 16px;
+    color:#000;
+}
+
+#creative-learning-content h1{
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    border-top: 5px #000 solid;
+}
+
+#creative-learning-content h3{
+    margin-top: 5px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    border-bottom: 2px #000 solid;
+
+}
+
+#creative-learning-content p{
+    padding-right: 20px;
 }
 
 
@@ -439,19 +383,31 @@ a.anchor{
 
 
 #hmitl-content{
-    font-size: 15px;
+    font-size: 16px;
+    color: #000;
+}
+
+#hmitl-content a{
+    font-weight: bold;
+}
+
+#hmitl-content p{
+    padding-right: 20px;
 }
 
 #hmitl-content h1 {
     font-weight: bold;
-    margin-bottom: 20px;
-    color: #000;
+    padding-top: 5px;
+    border-top: 5px #000 solid;
+    padding-bottom: 35px;
+    border-bottom: 2px #000 solid;
 }
 
 #hmitl-content > .video-container{
     position: relative;
     padding-bottom: 56.25%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    margin-top: 5px;
 }
 
 #hmitl-content > .video-container > iframe{
@@ -460,6 +416,10 @@ a.anchor{
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+#hmitl-content .feedback{
+    margin-top: 35px;
 }
 
 
