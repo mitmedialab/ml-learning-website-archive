@@ -200,6 +200,10 @@ a.anchor{
     font-weight: bold;
 }
 
+.project-link{
+    display: inline-block;
+}
+
 .project-link:hover{
     color:#e5e5e5;
 }
