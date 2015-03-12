@@ -58,7 +58,6 @@ a.anchor{
 
 .navbar-inverse .navbar-nav > .active > a{
     border-bottom: #fff solid 2px;
-    //background-color: #000;
 }
 
 .navbar-inverse .navbar-nav > .active > a:hover{
@@ -110,7 +109,7 @@ a.anchor{
     height: 100%;
     width: 100%;
     position: relative;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .project-container > .project-image{

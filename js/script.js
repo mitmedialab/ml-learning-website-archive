@@ -14,25 +14,23 @@ $.fn.clicktoggle = function(a, b) {
 
 
 if(!!('ontouchstart' in window)){
-	$('.project-container').clicktoggle(function(){  
+	$('.project-container').clicktoggle(function(){ 
+        $(this).css('background-color','#000'); 
         $(this).find('.project-content').fadeTo('fast',1);
         $(this).find('.project-image').fadeTo('fast',0.3);
-
     },    
-    function(){ 
-
+    function(){
        	$(this).find('.project-content').fadeTo('fast',0);
         $(this).find('.project-image').fadeTo('fast',1);
 	});
 }
 else{
 	$('.project-container').hover(function(){  
+        $(this).css('background-color','#000');
         $(this).find('.project-content').fadeTo('fast',1);
         $(this).find('.project-image').fadeTo('fast',0.3);
-
     },    
-    function(){ 
-
+    function(){
        	$(this).find('.project-content').fadeTo('fast',0);
         $(this).find('.project-image').fadeTo('fast',1);
 	});
