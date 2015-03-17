@@ -226,6 +226,10 @@ a.anchor{
     margin-bottom: 30px;
 }
 
+.left-info > #contact-name{
+    margin-bottom: 0px;
+}
+
 #ml-logo{
     margin-top: 50px;
     padding:0px;
@@ -235,7 +239,7 @@ a.anchor{
     color: #000;
     font-weight: bold;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     letter-spacing: -0.2px;
 }
 
@@ -246,7 +250,7 @@ a.anchor{
 #quote{
     font-size: 18px;
     letter-spacing: -0.2px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 
 /* --------------- media queries for responsiveness --------------- */

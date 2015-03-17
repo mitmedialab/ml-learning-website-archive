@@ -1,3 +1,4 @@
+// clicktoggle function for touch-device viewing (no hover)
 $.fn.clicktoggle = function(a, b) {
     return this.each(function() {
         var clicked = false;
@@ -12,7 +13,7 @@ $.fn.clicktoggle = function(a, b) {
     });
 };
 
-
+// check for for touch-device to decide if clicktoggle or hover for project gallery
 if(!!('ontouchstart' in window)){
 	$('.project-container').clicktoggle(function(){ 
         $(this).css('background-color','#000'); 
@@ -36,8 +37,7 @@ else{
 	});
 }
 
-
-    
+ // scroll logic to correctly toggle nav-bar active page between 'home' and 'about'   
 $(window).scroll(function () {
 
     if ($(window).scrollTop() + $(window).height() > $('.about-content').offset().top + $('.about-content').height()) {
@@ -49,5 +49,10 @@ $(window).scroll(function () {
     }
 });
 
-
+// to fix bootstrap's non-collapsing collapsed nav-bar when in-page link is clicked
+$(document).on('click.nav','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') || $(e.target).is('button')) {
+        $(this).collapse('hide');
+    }
+});
 
