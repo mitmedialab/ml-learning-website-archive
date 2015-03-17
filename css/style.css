@@ -9,13 +9,22 @@ body{
     background-color: #fff
 }
 
-a:hover{
-    text-decoration: none;
+a{
     color:#000;
 }
 
-a{
-    color:#383838;
+a:hover{
+    text-decoration: none;
+    border-bottom: 1px #000 solid;
+    color: #000;
+}
+
+.bold-link:hover{
+    border-bottom: 2px #000 solid;
+}
+
+.no-hover-link:hover{
+    border-bottom: none;
 }
 
 a.anchor{
@@ -205,6 +214,8 @@ a.anchor{
 
 .project-link:hover{
     color:#e5e5e5;
+    border-bottom: none;
+    text-decoration: none;
 }
 
 /* --------------- about content styles --------------- */
