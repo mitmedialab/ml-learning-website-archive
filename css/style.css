@@ -2,7 +2,7 @@
 
 body{
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 25px;
     font-family: Helvetica,Arial,sans-serif;
     min-height: 900px;
     color:#1A1A1A;
@@ -264,6 +264,31 @@ a.anchor{
     margin-bottom: 40px;
 }
 
+#supporters{
+    margin-top: 150px;
+}
+
+#supporters h5{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#supporters img{
+    display: inline-block;
+}
+
+#joyce, #lego {
+    margin-left: 10px;
+}
+
+#joyce img{
+    margin-top:12px;
+}
+
+#lego img{
+    margin-top:8px;
+}
+
 /* --------------- media queries for responsiveness --------------- */
 
 /* sm screen size */
@@ -334,6 +359,22 @@ a.anchor{
     #ml-logo{
         margin-top: 30px;
     }
+
+    #supporters img{
+        display: block;
+    }
+
+    #joyce, #lego {
+        margin-left: 0px;
+    }
+
+    #joyce img{
+        margin-top:10px;
+    }
+
+    #lego img{
+        margin-top:10px;
+    }
 }
 
 /* special -  */
@@ -397,8 +438,13 @@ a.anchor{
 
 
 #hmitl-content{
-    font-size: 16px;
+    font-size: 17px;
     color: #000;
+    line-height: 1.6em;
+}
+
+#hmitl-content p{
+    padding-bottom: 10px;
 }
 
 #hmitl-content a{
