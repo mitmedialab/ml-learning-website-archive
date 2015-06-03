@@ -97,6 +97,17 @@ a.anchor{
 
 }
 
+/* --------------- footer styles --------------- */
+
+footer{
+    margin-top: 20px;
+    font-size: .85em;
+}
+
+footer a{
+    font-weight: bold;
+}
+
 
 /* --------------- main gallery styles --------------- */
 
