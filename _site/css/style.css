@@ -1,0 +1,493 @@
+/* CSS */ 
+
+body{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-family: Helvetica,Arial,sans-serif;
+    min-height: 900px;
+    color:#1A1A1A;
+    background-color: #fff
+}
+
+a{
+    color:#000;
+}
+
+a:hover{
+    text-decoration: none;
+    border-bottom: 1px #000 solid;
+    color: #000;
+}
+
+.bold-link:hover{
+    border-bottom: 2px #000 solid;
+}
+
+.no-hover-link:hover{
+    border-bottom: none;
+}
+
+a.anchor{
+    display: block; position: relative; top: -35px; visibility: hidden;
+}
+
+/* --------------- navbar styles --------------- */
+
+.navbar{
+    min-height:35px;
+}
+
+.navbar-inverse{
+    background-color: #0D0D0D;
+}
+
+.navbar-inverse .navbar-brand{
+    height: 35px;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-brand:hover{
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    height: 30px;
+    padding: 9px 0px 6px 0px; 
+    margin: 0px 15px 0px 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    border-bottom: #fff solid 2px;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a{
+    border-bottom: #fff solid 2px;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.navbar-toggle{
+    padding: 5px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 0px;
+}
+
+.navbar-inverse .navbar-collapse{
+    border-color: #ddd;
+}
+
+@media (max-width: 767px){
+
+    .navbar-inverse .navbar-nav > .active > a{
+        display: inline-block;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        display: inline-block;
+    }
+
+}
+
+/* --------------- footer styles --------------- */
+
+footer{
+    margin-top: 20px;
+    font-size: .85em;
+}
+
+footer a{
+    font-weight: bold;
+}
+
+
+/* --------------- main gallery styles --------------- */
+
+.gallery > .col-md-6{
+    height: 485px;
+    padding: 15px;
+}
+
+.gallery > .col-md-3{
+    height: 243px;
+    padding: 15px;
+}
+
+.special-float{
+    float:right;
+}
+
+.project-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+.project-container > .project-image{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity:1;
+}
+
+.project-image > img{
+    height: 100%;
+}
+
+.project-container > .project-content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.big-feature{
+    padding: 25px;
+}
+
+.small-feature{
+    padding: 15px;
+}
+
+.big-feature > .top-line{
+    border-top: 3px #fff solid;
+    width: 50%;
+    margin-top: 3px;
+}
+
+.small-feature > .top-line{
+    border-top: 2px #fff solid;
+    width: 75%;
+    margin-top: 2px;
+}
+
+.big-feature > .project-title{
+    font-size: 36px;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+    line-height: 95%;
+}
+
+.small-feature > .project-title{
+    font-size: 28px;
+    color: #fff;
+    margin-top: 8px;
+    font-weight: bold;
+    line-height: 95%;
+    margin-bottom: 8px;
+}
+
+.big-feature > .project-description{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 200;
+    line-height: 130%;
+}
+
+.small-feature > .project-description{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+.big-feature > .project-link{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.small-feature > .project-link{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.project-link{
+    display: inline-block;
+}
+
+.project-link:hover{
+    color:#e5e5e5;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+/* --------------- about content styles --------------- */
+
+.about-content{
+    margin-top: 100px;
+}
+
+.left-info{
+    height:100%;
+}
+
+.left-info > h4{
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.left-info > p{
+    margin-bottom: 30px;
+}
+
+.left-info > #contact-name{
+    margin-bottom: 0px;
+}
+
+#ml-logo{
+    margin-top: 50px;
+    padding:0px;
+}
+
+.right-info > h2{
+    color: #000;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 35px;
+    letter-spacing: -0.2px;
+}
+
+.right-info > p{
+    font-size: 16px;
+}
+
+#quote{
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    margin-bottom: 40px;
+}
+
+#supporters{
+    margin-top: 150px;
+}
+
+#supporters h5{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#supporters img{
+    display: inline-block;
+}
+
+#joyce, #lego {
+    margin-left: 10px;
+}
+
+#joyce img{
+    margin-top:12px;
+}
+
+#lego img{
+    margin-top:8px;
+}
+
+/* --------------- media queries for responsiveness --------------- */
+
+/* sm screen size */
+@media (max-width: 991px){
+    .gallery > .col-sm-6{
+        height: 375px;
+    }
+
+    .project-content{
+        padding: 25px !important;
+    }
+
+    .top-line{
+        width: 50% !important;
+        border-top: solid 3px #fff !important;
+    }
+
+    .project-title{
+        font-size: 36px !important; 
+        margin-bottom: 15px !important;
+    }
+
+    .project-description{
+        font-size: 16px !important;
+        margin-bottom: 25px !important; 
+    }
+
+    .project-link{
+        font-size: 16px !important;
+    }
+    
+}
+
+/* xs screen size */
+@media (max-width: 767px){
+
+    body{
+        padding-bottom: 50px;
+    }
+
+    .about-content{
+        margin-top: 50px;
+    }  
+
+    .gallery > .col-xs-12{
+        max-height: 375px;
+    }
+
+    .project-container{
+        max-width: 345px;
+    }
+
+    .project-image > img{
+        width:100%;
+        height: auto;
+        max-width: 345px; 
+    }
+
+    .right-info, .left-info{
+        padding-right:30px;
+        padding-left: 30px; 
+    }
+
+    #l0e-summary{
+        margin-bottom: 20px;
+    }
+
+    #ml-logo{
+        margin-top: 30px;
+    }
+
+    #supporters img{
+        display: block;
+    }
+
+    #joyce, #lego {
+        margin-left: 0px;
+    }
+
+    #joyce img{
+        margin-top:10px;
+    }
+
+    #lego img{
+        margin-top:10px;
+    }
+}
+
+/* special -  */
+@media (max-width: 375px){
+
+    .gallery > .col-xs-12{
+        height: auto;
+    }
+
+    .project-content{
+        padding: 15px !important;
+        overflow: hidden;
+    }
+
+    .project-container{
+        padding-bottom: 100%;
+    }
+
+    .project-title{
+        font-size: 1.7em !important; 
+        margin-bottom: 10px !important;
+    }
+
+    .project-description{
+        font-size: 1em !important;
+        margin-bottom: 15px !important; 
+    }
+
+    .project-link{
+        font-size: 1em !important;
+    }
+}
+
+
+
+/* --------------- creative learning page styles --------------- */
+
+
+#creative-learning-content{
+    font-size: 16px;
+    color:#000;
+}
+
+#creative-learning-content h1{
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    border-top: 5px #000 solid;
+}
+
+#creative-learning-content h3{
+    margin-top: 5px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    border-bottom: 2px #000 solid;
+
+}
+
+
+/* --------------- hmitl page styles --------------- */
+
+
+#hmitl-content{
+    font-size: 17px;
+    color: #000;
+    line-height: 1.6em;
+}
+
+#hmitl-content p{
+    padding-bottom: 10px;
+}
+
+#hmitl-content a{
+    font-weight: bold;
+}
+
+#hmitl-content h1 {
+    font-weight: bold;
+    padding-top: 5px;
+    border-top: 5px #000 solid;
+    padding-bottom: 35px;
+    border-bottom: 2px #000 solid;
+}
+
+#hmitl-content > .video-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+#hmitl-content > .video-container > iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#hmitl-content .feedback{
+    margin-top: 35px;
+}
+
+
+
