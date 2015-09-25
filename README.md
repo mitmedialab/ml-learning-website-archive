@@ -1,3 +1,3 @@
-# learning-over-education.github.io
+# ml-learning.github.io
 
-LOE Website
+MIT Media Lab Learning Initiative Website
