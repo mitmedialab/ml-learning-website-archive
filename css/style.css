@@ -288,8 +288,12 @@ footer a{
     display: inline-block;
 }
 
-#joyce, #lego {
+#joyce, #lego{
     margin-left: 10px;
+}
+
+#siegel-fam{
+    margin-left: 8px;
 }
 
 #joyce img{
@@ -298,6 +302,10 @@ footer a{
 
 #lego img{
     margin-top:8px;
+}
+
+#siegel-fam img{
+    margin-top: 15px;
 }
 
 /* --------------- media queries for responsiveness --------------- */
@@ -376,15 +384,23 @@ footer a{
     }
 
     #joyce, #lego {
-        margin-left: 0px;
+        margin-left: 10px;
     }
 
+    #siegel-fam{
+        margin-left: 8px;
+    }
+    
     #joyce img{
         margin-top:10px;
     }
 
     #lego img{
         margin-top:10px;
+    }
+
+    #siegel-fam img{
+        margin-top: 15px;
     }
 }
 
