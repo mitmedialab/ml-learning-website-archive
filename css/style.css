@@ -237,6 +237,7 @@ footer a{
 
 .left-info{
     height:100%;
+    margin-top: 130px;
 }
 
 .left-info > h4{
@@ -371,8 +372,8 @@ footer a{
         padding-left: 30px; 
     }
 
-    #l0e-summary{
-        margin-bottom: 20px;
+    #contact-info-column{
+        margin-top: 0px;
     }
 
     #ml-logo{
