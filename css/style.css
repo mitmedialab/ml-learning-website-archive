@@ -289,24 +289,20 @@ footer a{
     display: inline-block;
 }
 
-#joyce, #lego{
-    margin-left: 10px;
-}
-
-#siegel-fam{
-    margin-left: 8px;
-}
-
 #joyce img{
-    margin-top:12px;
+    margin-top: 12px;
 }
 
 #lego img{
-    margin-top:8px;
+    margin-top: 7px;
 }
 
-#siegel-fam img{
-    margin-top: 15px;
+#joyce, #lego, #siegel-fam, #bezos, #knight, #marcus{
+    margin-left: 10px;
+}
+
+#marcus img{
+    margin-top: 5px;
 }
 
 /* --------------- media queries for responsiveness --------------- */
@@ -372,37 +368,6 @@ footer a{
         padding-left: 30px; 
     }
 
-    #contact-info-column{
-        margin-top: 0px;
-    }
-
-    #ml-logo{
-        margin-top: 30px;
-    }
-
-    #supporters img{
-        display: block;
-    }
-
-    #joyce, #lego {
-        margin-left: 10px;
-    }
-
-    #siegel-fam{
-        margin-left: 8px;
-    }
-    
-    #joyce img{
-        margin-top:10px;
-    }
-
-    #lego img{
-        margin-top:10px;
-    }
-
-    #siegel-fam img{
-        margin-top: 15px;
-    }
 }
 
 /* special -  */
